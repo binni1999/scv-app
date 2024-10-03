@@ -1,0 +1,15 @@
+User entity
+name,password,email,phoneNumber,role,about,profile pic,private boolean enabled,boolean emailVerified,phoneVerified
+user signup type //SELF,GOOGLE,FACEBOOK,TWITTER,LINEDIN,GITHUB
+
+
+enum provider = self,google,github
+
+private Provider provider= Provider.SELF,
+providerUserId
+
+//Contact Class
+
+
+
+the sidebar should be visible when we click on the profile page
