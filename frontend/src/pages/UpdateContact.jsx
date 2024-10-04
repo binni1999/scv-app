@@ -113,12 +113,12 @@ const UpdateContact = () => {
 
   return (
     <>
-      <div className="md:pl-64 md:ml-10 md:pt-20">
+      <div className="md:pl-64 md:ml-10 md:pt-20 updateContact">
         <div className="pl-3">
           <Link to={"/view-contact"}>
             <button
               type="button"
-              class="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 "
+              className="updateContactButton text-white bg-gradient-to-r md:mt-4 from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 "
             >
               Go Back
             </button>
@@ -146,7 +146,7 @@ const UpdateContact = () => {
                 <div className="mb-2">
                   <label
                     for="name"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     Contact Name
                   </label>
@@ -155,7 +155,7 @@ const UpdateContact = () => {
                     id="name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="enter contact name"
                   />
                 </div>
@@ -163,7 +163,7 @@ const UpdateContact = () => {
                 <div className="mb-2">
                   <label
                     for="email"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     Contact Email
                   </label>
@@ -172,7 +172,7 @@ const UpdateContact = () => {
                     id="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="example@gmail.com"
                   />
                 </div>
@@ -180,7 +180,7 @@ const UpdateContact = () => {
                 <div className="mb-2">
                   <label
                     for="phone"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     Contact Number
                   </label>
@@ -189,7 +189,7 @@ const UpdateContact = () => {
                     id="phone"
                     value={phoneNumber}
                     onChange={(e) => setPhoneNumber(e.target.value)}
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="enter contact number"
                   />
                 </div>
@@ -198,7 +198,7 @@ const UpdateContact = () => {
                 <div className="mb-2">
                   <label
                     for="message"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     Contact Address
                   </label>
@@ -207,7 +207,7 @@ const UpdateContact = () => {
                     rows="4"
                     value={address}
                     onChange={(e) => setAddress(e.target.value)}
-                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="enter contact address"
                   ></textarea>
                 </div>
@@ -216,7 +216,7 @@ const UpdateContact = () => {
                 <div className="mb-2">
                   <label
                     for="description"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     Contact Description
                   </label>
@@ -225,7 +225,7 @@ const UpdateContact = () => {
                     rows="4"
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
-                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="write about your contact"
                   ></textarea>
                 </div>
@@ -234,8 +234,8 @@ const UpdateContact = () => {
                   <div className="w-full">
                     {/* Website link */}
                     <div className="mb-2">
-                      <div class="relative mb-6">
-                        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                      <div className="relative mb-6">
+                        <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
                           <FaEarthAfrica />
                         </div>
                         <input
@@ -243,7 +243,7 @@ const UpdateContact = () => {
                           id="website"
                           value={websiteLink}
                           onChange={(e) => setWebsiteLink(e.target.value)}
-                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder="https://www.binni.com"
                         />
                       </div>
@@ -252,8 +252,8 @@ const UpdateContact = () => {
                   <div className="w-full">
                     {/* Linkedin link */}
                     <div className="mb-2">
-                      <div class="relative mb-6">
-                        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                      <div className="relative mb-6">
+                        <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
                           <FaLinkedin />
                         </div>
                         <input
@@ -261,7 +261,7 @@ const UpdateContact = () => {
                           id="linkedin"
                           value={linkedinLink}
                           onChange={(e) => setLinkedinLink(e.target.value)}
-                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder="https://www.linkedin.com"
                         />
                       </div>
@@ -272,7 +272,7 @@ const UpdateContact = () => {
                 {/* add image profile pic */}
                 <div className="mb-3">
                   <label
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     for="small_size"
                   >
                     Contact Image
@@ -290,17 +290,17 @@ const UpdateContact = () => {
 
                 {/* Favcheckbox */}
                 <div className="mb-3">
-                  <div class="flex items-center mb-4">
+                  <div className="flex items-center mb-4">
                     <input
                       id="default-checkbox"
                       type="checkbox"
                       checked={favourite}
                       onChange={(e) => setFavourite(e.target.checked)}
-                      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                     />
                     <label
                       for="default-checkbox"
-                      class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                      className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
                       Is this contact your favourite one?
                     </label>
@@ -315,7 +315,7 @@ const UpdateContact = () => {
                       <svg
                         aria-hidden="true"
                         role="status"
-                        class="inline w-4 h-4 me-3 text-white animate-spin"
+                        className="inline w-4 h-4 me-3 text-white animate-spin"
                         viewBox="0 0 100 101"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"

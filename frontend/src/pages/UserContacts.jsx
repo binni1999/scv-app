@@ -107,7 +107,7 @@ const UserContacts = () => {
   };
   return (
     <>
-      <div className="sm:pl-64  ml-10 pt-20" style={{ height: "650px" }}>
+      <div className="sm:pl-64  md:ml-10 md:pt-20" style={{ height: "650px" }}>
         <div className=" dark:text-white dark:bg-dark">
           <h1 className="text-3xl text-center text-black dark:text-white ">
             All your contacts
@@ -123,7 +123,7 @@ const UserContacts = () => {
                   </label>
                   <div className="">
                     <div className="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center pointer-events-none">
-                      <svg
+                      {/* <svg
                         className="w-4 h-4 text-gray-500 dark:text-gray-400"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +137,7 @@ const UserContacts = () => {
                           stroke-width="2"
                           d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
                         />
-                      </svg>
+                      </svg> */}
                     </div>
                     <input
                       value={seachValue}
@@ -186,7 +186,7 @@ const UserContacts = () => {
                   <div role="status">
                     <svg
                       aria-hidden="true"
-                      class="inline w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+                      className="inline w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
                       viewBox="0 0 100 101"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -200,7 +200,7 @@ const UserContacts = () => {
                         fill="currentFill"
                       />
                     </svg>
-                    <span class="sr-only">Loading...</span>
+                    <span className="sr-only">Loading...</span>
                   </div>
                 ) : (
                   <tbody>
@@ -284,7 +284,7 @@ const UserContacts = () => {
               </table>
               {/* Modal */}
               {showModal && modalContact && (
-                <div class="relative p-4">
+                <div className="relative p-4">
                   {/* w-full max-w-2xl max-h-full */}
                   <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 ">
                     <div className="bg-white dark:bg-gray-800 p-6 rounded-lg  relative md:w-[650px] ">
@@ -297,68 +297,68 @@ const UserContacts = () => {
                       </button>
 
                       {/* Modal Content */}
-                      <div class="p-4 flex flex-col justify-center items-center space-y-2">
+                      <div className="p-4 flex flex-col justify-center items-center space-y-2">
                         <img
                           id="contact_image"
-                          class="w-32 h-32 rounded-full"
+                          className="w-32 h-32 rounded-full"
                           src={modalContact.picture}
                           alt={modalContact.name}
                         />
                         <h3
                           id="contact_name"
-                          class="text-xl font-semibold text-gray-900 dark:text-white"
+                          className="text-xl font-semibold text-gray-900 dark:text-white"
                         >
                           {modalContact.name}
                         </h3>
 
                         <p
-                          class="text-gray-600 dark:text-gray-300"
+                          className="text-gray-600 dark:text-gray-300"
                           id="contact_email"
                         >
                           {modalContact.email}
                         </p>
                         <p
-                          class="text-gray-600 dark:text-gray-300"
+                          className="text-gray-600 dark:text-gray-300"
                           id="contact_phone"
                         >
                           {modalContact.phone}
                         </p>
                       </div>
-                      <div class="p-2 md:p-3 space-y-2">
-                        <div class="relative overflow-x-auto">
-                          <table class="w-full text-sm text-center rtl:text-right text-gray-500 dark:text-gray-400">
+                      <div className="p-2 md:p-3 space-y-2">
+                        <div className="relative overflow-x-auto">
+                          <table className="w-full text-sm text-center rtl:text-right text-gray-500 dark:text-gray-400">
                             <tbody>
-                              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 ">
+                              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 ">
                                 <th
                                   scope="row"
-                                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                                 >
                                   <SiHomeadvisor />
                                 </th>
-                                <td class="px-6 py-4">
+                                <td className="px-6 py-4">
                                   <span id="contact_about">
                                     {modalContact.address}
                                   </span>
                                 </td>
                               </tr>
 
-                              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th
                                   scope="row"
-                                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                                 >
                                   <FcAbout className="w-4 h-4" />
                                 </th>
-                                <td class="px-6 py-4">
+                                <td className="px-6 py-4">
                                   <span id="contact_about">
                                     {modalContact.description}
                                   </span>
                                 </td>
                               </tr>
-                              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th
                                   scope="row"
-                                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                                 >
                                   {modalContact.favourite ? (
                                     <MdFavorite className="w-4 h-4" />
@@ -366,7 +366,7 @@ const UserContacts = () => {
                                     <MdFavoriteBorder className="w-4 h-4" />
                                   )}
                                 </th>
-                                <td class="px-6 py-4">
+                                <td className="px-6 py-4">
                                   <span id="contact_favorite">
                                     {`This is your ${
                                       modalContact.favourite
@@ -376,14 +376,14 @@ const UserContacts = () => {
                                   </span>
                                 </td>
                               </tr>
-                              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th
                                   scope="row"
-                                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                                 >
                                   <FaEarthAfrica className="w-4 h-4" />
                                 </th>
-                                <td class="px-6 py-4">
+                                <td className="px-6 py-4">
                                   <a
                                     href={modalContact.websiteLink}
                                     id="contactwebsite"
@@ -392,14 +392,14 @@ const UserContacts = () => {
                                   </a>
                                 </td>
                               </tr>
-                              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th
                                   scope="row"
-                                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                                 >
                                   <FaLinkedin className="w-4 h-4" />
                                 </th>
-                                <td class="px-6 py-4">
+                                <td className="px-6 py-4">
                                   <a
                                     href={modalContact.linkedinLink}
                                     id="contact_linkedIn"

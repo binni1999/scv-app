@@ -67,7 +67,7 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="md:pl-64 md:ml-10 md:pt-20">
+      <div className="md:pl-64 md:ml-10 md:pt-20 md:mt-2 contactForSmallScreen">
         <div className="grid grid-cols-12">
           <div className="md:col-span-2.5 "></div>
           <div className="col-span-12 pl-20 md:col-span-7">
@@ -89,7 +89,7 @@ const Contact = () => {
                 <div className="mb-2">
                   <label
                     for="name"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     Contact Name
                   </label>
@@ -98,7 +98,7 @@ const Contact = () => {
                     id="name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="enter contact name"
                   />
                 </div>
@@ -106,7 +106,7 @@ const Contact = () => {
                 <div className="mb-2">
                   <label
                     for="email"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     Contact Email
                   </label>
@@ -115,7 +115,7 @@ const Contact = () => {
                     id="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="example@gmail.com"
                   />
                 </div>
@@ -123,7 +123,7 @@ const Contact = () => {
                 <div className="mb-2">
                   <label
                     for="phone"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     Contact Number
                   </label>
@@ -132,7 +132,7 @@ const Contact = () => {
                     id="phone"
                     value={phoneNumber}
                     onChange={(e) => setPhoneNumber(e.target.value)}
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="enter contact number"
                   />
                 </div>
@@ -141,7 +141,7 @@ const Contact = () => {
                 <div className="mb-2">
                   <label
                     for="message"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     Contact Address
                   </label>
@@ -150,7 +150,7 @@ const Contact = () => {
                     rows="4"
                     value={address}
                     onChange={(e) => setAddress(e.target.value)}
-                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="enter contact address"
                   ></textarea>
                 </div>
@@ -159,7 +159,7 @@ const Contact = () => {
                 <div className="mb-2">
                   <label
                     for="description"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     Contact Description
                   </label>
@@ -168,7 +168,7 @@ const Contact = () => {
                     rows="4"
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
-                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="write about your contact"
                   ></textarea>
                 </div>
@@ -177,8 +177,8 @@ const Contact = () => {
                   <div className="w-full">
                     {/* Website link */}
                     <div className="mb-2">
-                      <div class="relative mb-6">
-                        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                      <div className="relative mb-6">
+                        <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
                           <FaEarthAfrica className="text-gray-500 dark:text-gray-300" />
                         </div>
                         <input
@@ -186,7 +186,7 @@ const Contact = () => {
                           id="website"
                           value={websiteLink}
                           onChange={(e) => setWebsiteLink(e.target.value)}
-                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder="https://www.binni.com"
                         />
                       </div>
@@ -195,8 +195,8 @@ const Contact = () => {
                   <div className="w-full">
                     {/* Linkedin link */}
                     <div className="mb-2">
-                      <div class="relative mb-6">
-                        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                      <div className="relative mb-6">
+                        <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
                           <FaLinkedin className="text-gray-500 dark:text-gray-300" />
                         </div>
                         <input
@@ -204,7 +204,7 @@ const Contact = () => {
                           id="linkedin"
                           value={linkedinLink}
                           onChange={(e) => setLinkedinLink(e.target.value)}
-                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder="https://www.linkedin.com"
                         />
                       </div>
@@ -215,7 +215,7 @@ const Contact = () => {
                 {/* add image profile pic */}
                 <div className="mb-3">
                   <label
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     for="small_size"
                   >
                     Contact Image
@@ -233,17 +233,17 @@ const Contact = () => {
 
                 {/* Favcheckbox */}
                 <div className="mb-3">
-                  <div class="flex items-center mb-4">
+                  <div className="flex items-center mb-4">
                     <input
                       id="default-checkbox"
                       type="checkbox"
                       checked={favourite}
                       onChange={(e) => setFavourite(e.target.checked)}
-                      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                     />
                     <label
                       for="default-checkbox"
-                      class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                      className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
                       Is this contact your favourite one?
                     </label>

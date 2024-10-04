@@ -102,7 +102,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
           <Link to="/" className="flex flex-col items-center ps-2.5 mb-8">
             <img
               src={user.profilePic}
-              className="md:h-24 md:w-24 h-24 w-24 shadow-md  rounded-full"
+              className="md:h-24 md:w-24 h-24 w-24 shadow-md object-cover  rounded-full"
               alt={user.name}
             />
 

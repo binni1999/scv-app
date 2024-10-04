@@ -112,9 +112,11 @@ const Home = () => {
       </section>
 
       <section className="text-center py-10">
-        <button className="bg-purple-500 dark:bg-blue-500 text-white px-6 py-2 rounded-full text-lg shadow-md hover:bg-purple-600 transition-colors duration-300">
-          Lets Start
-        </button>
+        <Link to={"/login"}>
+          <button className="bg-purple-500 dark:bg-blue-500 text-white px-6 py-2 rounded-full text-lg shadow-md hover:bg-purple-600 transition-colors duration-300">
+            Lets Start
+          </button>
+        </Link>
       </section>
     </>
   );

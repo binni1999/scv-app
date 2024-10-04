@@ -42,8 +42,8 @@
     margin-top: 1px;
   }
   .profileDiv {
-    display: hidden;
-    position: relative;
+    display: hidden !important;
+    position: relative !important;
   }
   .profileButton {
     position: absolute;
@@ -93,6 +93,26 @@
   .toggleHamburger {
     margin-top: 20px !important;
     font-size: 20px !important;
+  }
+
+  .contactForSmallScreen {
+    margin-left: -80px !important;
+    margin-top: 60px !important;
+    padding-top: 30px !important;
+  }
+  .messageClass {
+    margin-top: 50px !important;
+  }
+  .updateContact {
+    margin-left: -80px !important;
+    margin-top: 40px !important;
+  }
+  .updateContactButton {
+    margin-left: 80px !important;
+    margin-top: 50px !important;
+  }
+  .contactUs {
+    margin-top: 100px !important;
   }
 }
 

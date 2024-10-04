@@ -7,12 +7,12 @@ const ContactUs = () => {
 
   return (
     <section
-      className={`${userInfo ? "md:mt-10 md:pt-10 md:pl-64" : "md:pl-20"}`}
+      className={`${userInfo ? "md:mt-10 md:pt-10 md:pl-64 " : "md:pl-20"}`}
     >
       <div className="grid grid-cols-12">
         <div className="col-span-3 md:col-span-3 lg:col-span-3"></div>
         <div className="col-span-6 md:col-span-6">
-          <div className="mt-10 dark:text-white text-black font-semibold justify-center text-center">
+          <div className="mt-10 dark:text-white text-black font-semibold justify-center text-center contactUs">
             <h2 className="text-2xl">Contact Us</h2>
             <p className="dark:text-gray-500 mt-3">
               Lorem ipsum dolor sit amet. Lorem, ipsum dolor.{" "}
@@ -69,7 +69,7 @@ const ContactUs = () => {
               <div className="text-center">
                 <button
                   type="button"
-                  class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                  className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
                 >
                   Send
                 </button>

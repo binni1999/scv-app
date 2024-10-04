@@ -258,7 +258,7 @@ const Profile = () => {
                           type="file"
                         />
                       </div>
-                      <div className="profileDiv relative z-0 w-full mb-5 group">
+                      <div className=" relative z-0 w-full mb-5 group">
                         <img
                           className="w-32 h-32 rounded-full shadow-lg object-cover "
                           src={
@@ -273,14 +273,14 @@ const Profile = () => {
 
                     <button
                       type="submit"
-                      class="relative profileButton  inline-flex items-center justify-center p-0.5 mb-2 me-2  overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"
+                      className="relative   inline-flex items-center justify-center p-0.5 mb-2 me-2  overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"
                     >
-                      <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                      <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                         {loading && (
                           <svg
                             aria-hidden="true"
                             role="status"
-                            class="inline w-4 h-4 me-3 text-white animate-spin"
+                            className="inline w-4 h-4 me-3 text-white animate-spin"
                             viewBox="0 0 100 101"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"

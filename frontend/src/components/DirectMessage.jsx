@@ -6,11 +6,11 @@ const DirectMessage = () => {
   useTitle("Direct Message");
   return (
     <section
-      className="pl-64 pt-10 dark:bg-dark"
-      style={{ height: "550px", marginTop: "4rem" }}
+      className="md:pl-64 md:pt-10  dark:bg-dark"
+      style={{ height: "550px", marginTop: "5rem" }}
     >
-      <div className="flex flex-col mt-10 pt-20 text-center justify-between">
-        <h1 className="text-2xl dark:text-white text-black">
+      <div className="flex flex-col messageClass md:mt-10 md:pt-20 text-center justify-between">
+        <h1 className="text-2xl dark:text-white mt-10 text-black">
           Direct Message Page Is Under Construction
         </h1>
       </div>
